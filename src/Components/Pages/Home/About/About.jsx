@@ -1,18 +1,18 @@
 import img from "../../../../assets/img.jpg"
-import { FaRegFile, FaRegUser, FaRegEnvelope, FaMapMarkerAlt, FaLinkedin, FaGithub, FaFacebookF } from "react-icons/fa";
+import { FaRegFile, FaRegUser, FaRegEnvelope, FaMapMarkerAlt } from "react-icons/fa";
 
 const About = () => {
     const handleDownloadResume = ()=>{
         console.log("btn clicked");
     }
     return (
-        <div className="my-10 flex gap-4">
+        <div className="my-10 flex gap-4" id="home">
             <div className="md:w-1/2 flex flex-col justify-between">
                 <div className="bg-slate-100 p-10 flex flex-col gap-2 rounded-xl shadow-2xl hover:translate-y-1 relative">
                     <p className="text-2xl"><FaRegUser></FaRegUser></p>
                     <h1 className="text-4xl font-bold">Hi, I'm <span className="text-red-500">Yusuf Hasan</span></h1>
-                    <p className="text-xl">Working as a Front End Developer from the part of my passion.</p>
-                    <p className="flex items-center gap-2 text-xl"><FaRegFile className="text-red-500"></FaRegFile> Front End Developer</p>
+                    <p className="text-xl">Working as a MERN Stack Developer from the part of my passion.</p>
+                    <p className="flex items-center gap-2 text-xl"><FaRegFile className="text-red-500"></FaRegFile> MERN stack Developer</p>
                     <p className="flex items-center gap-2 text-xl"><FaRegEnvelope className="text-red-500"></FaRegEnvelope> yhpolok@gmail.com</p>
                     <p className="flex items-center gap-2 text-xl"><FaMapMarkerAlt className="text-red-500"></FaMapMarkerAlt> Rajshahi, Bangladesh</p>
                 </div>

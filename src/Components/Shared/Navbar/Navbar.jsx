@@ -1,13 +1,14 @@
 
 const Navbar = () => {
     const navItems = <>
-        <li>Home</li>
-        <li>Projects</li>
-        <li>Skills</li>
-        <li>Contact Me</li>
+        <a href="#home">Home</a>
+        <a href="#services">Services</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact Me</a>
     </>
     return (
-        <div className="navbar bg-base-100">
+        <div className="navbar fixed top-0 z-20 bg-red-800 bg-opacity-10 font-semibold">
             <div className="navbar-start">
                 <div className="dropdown">
                     <label tabIndex={0} className="btn btn-ghost lg:hidden">

@@ -1,0 +1,31 @@
+[
+    {
+        "id":"p1",
+        "name":"Gear Up Sports Academy",
+        "image":"https://i.ibb.co/WK20PDV/project1.png",
+        "technology": "React | React Router | Tailwind CSS | Daisy UI | Firebase | Express JS | MongoDB | Stripe",
+        "liveLink": "https://gear-up-sports-academy.web.app/",
+        "type":"full stack"
+    },{
+        "id":"p2",
+        "name":"Disney Toy Bazar",
+        "image":"https://i.ibb.co/gJzVf4x/project2.png",
+        "technology": "React | React Router | Tailwind CSS | Daisy UI | Firebase | Express JS | MongoDB",
+        "liveLink": "https://disney-toy-bazar.web.app/",
+        "type":"full stack"
+    },{
+        "id":"p3",
+        "name":"Job Hunt",
+        "image":"https://i.ibb.co/3NYRFyn/project4.png",
+        "technology": "React | React Router | Vanilla CSS",
+        "liveLink": "https://guileless-maamoul-0e5432.netlify.app/",
+        "type":"front end"
+    },{
+        "id":"p4",
+        "name":"Secret Chef Recipe",
+        "image":"https://i.ibb.co/cCZSrZx/project3.png",
+        "technology": "React | React Router | React Bootstrap | Firebase | Express JS",
+        "liveLink": "https://secret-chef-recipe.web.app/",
+        "type": "front end"
+    }
+]
