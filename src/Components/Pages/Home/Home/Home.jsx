@@ -1,8 +1,11 @@
+import About from "../About/About";
+import Skills from "../Skills/Skills";
 
 const Home = () => {
     return (
         <div>
-            <h1>Welcome to Home</h1>
+            <About></About>
+            <Skills></Skills>
         </div>
     );
 };
