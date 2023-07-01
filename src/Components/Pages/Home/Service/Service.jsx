@@ -6,8 +6,8 @@ const Service = () => {
     return (
         <div id="services">
             <Heading subTitle={"Services I Offer"} title={"What Can I Do"}></Heading>
-            <div className="my-10 flex justify-evenly">
-                <div className="card card-compact w-96 bg-base-100 shadow-xl relative">
+            <div className="my-10 mx-10 flex flex-col md:flex-row justify-evenly">
+                <div className="card card-compact mb-20 md:w-96 md:mb-0 bg-base-100 shadow-xl relative">
                     <figure><img src={frontEnd} alt="Front end Development" /></figure>
                     <div className="card-body">
                         <h2 className="card-title text-2xl">Front End Web Application</h2>
@@ -17,7 +17,7 @@ const Service = () => {
                         <p className="text-4xl text-white font-semibold">10+</p>
                     </div>
                 </div>
-                <div className="card card-compact w-96 bg-base-100 shadow-xl relative">
+                <div className="card card-compact md:w-96 bg-base-100 shadow-xl relative">
                     <figure><img src={backEnd} alt="Front end Development" /></figure>
                     <div className="card-body">
                         <h2 className="card-title text-2xl">Full Stack Web Application</h2>

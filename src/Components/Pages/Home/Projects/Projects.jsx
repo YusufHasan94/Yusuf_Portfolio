@@ -1,12 +1,7 @@
 import { useEffect, useState } from 'react';
 import Heading from '../../../Shared/Heading/Heading';
-import { FaGlobe } from "react-icons/fa";
+import { FaGlobe, FaRegHeart } from "react-icons/fa";
 import { Link } from 'react-router-dom';
-import { Pagination } from 'swiper';
-import { Swiper, SwiperSlide } from "swiper/react";
-
-import "swiper/css";
-import "swiper/css/pagination";
 
 const Projects = () => {
     const [projects, setProjects] = useState([]);
@@ -18,32 +13,35 @@ const Projects = () => {
     return (
         <div id='projects'>
             <Heading subTitle="Some of my finished Projects" title="My Works"></Heading>
-            <div className='my-10'>
-                <Swiper
-                    slidesPerView={3}
-                    spaceBetween={30}
-                    pagination={{
-                        clickable: true,
-                    }}
-                    modules={[Pagination]}
-                >
-                    {
-                        projects.map(project => (
-                            <SwiperSlide key={project.id}>
-                                <div className="card card-compact w-96 h-80 bg-base-100 shadow-2xl relative">
-                                    <figure><img src={project.image} alt="Front end Development"/></figure>
-                                    <div className="card-body">
-                                        <h2 className="card-title text-2xl justify-between">
-                                            {project.name} 
-                                            <Link to={project.liveLink} target='_blank' className='text-2xl'><FaGlobe></FaGlobe></Link>
-                                        </h2>
-                                        <p className="text-base"><span className='font-semibold'>Technology:</span> {project.technology}</p>
+            <div className='my-10 mx-10'>
+                {
+                    projects.map(project => (
+                        <div key={project.id} className=" my-4 w-full bg-base-100 shadow-2xl md:flex rounded-xl">
+                                <figure className='md:w-2/5 flex'><img src={project.image} className='w-full' alt="Front end Development"/></figure>
+                                <div className="card-body md:w-3/5">
+                                    <div className='flex justify-between items-center text-xl'>
+                                        <span className='bg-red-600 px-2 py-1 rounded-full text-sm text-white font-semibold '>{project.type}</span>
+                                        <FaRegHeart></FaRegHeart>
                                     </div>
+                                    <h2 className="card-title text-2xl justify-between">
+                                        {project.name} 
+                                        <Link to={project.liveLink} target='_blank'>
+                                            <FaGlobe></FaGlobe>
+                                        </Link>
+                                    </h2>
+                                    <p>
+                                        {project.details}
+                                    </p>
+                                    <div className='grid grid-cols-2 md:grid-cols-4 my-4'>    
+                                        {
+                                            project.technology.map(item => <span key={project.id} className='bg-slate-100 p-2 mr-4 mb-4 rounded-xl font-semibold text-center'> {item}</span> )
+                                        }
+                                    </div>
+                                    
                                 </div>
-                            </SwiperSlide>
-                        ))
-                    }
-                </Swiper>
+                            </div>
+                    ))
+                }
             </div>
         </div>
     );

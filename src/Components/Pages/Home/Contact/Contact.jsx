@@ -7,11 +7,11 @@ const Contact = () => {
     return (
         <div id="contact">
             <Heading subTitle="stay connected" title="Contact Me"></Heading>
-            <div className="my-10">
+            <div className="my-10 mx-5">
                 <div className="hero">
-                    <div className="hero-content flex gap-4">
-                        <div className="W-1/4">
-                            <div className="card w-96 bg-slate-100 shadow-xl">
+                    <div className="hero-content flex flex-col md:flex-row gap-4">
+                        <div className="w-full md:w-1/2">
+                            <div className="card bg-slate-100 shadow-xl">
                                 <figure className="px-10 pt-10">
                                     <img src={profile} alt="Shoes" className="rounded-xl" />
                                 </figure>
@@ -30,16 +30,16 @@ const Contact = () => {
                                 </div>
                             </div>
                         </div>
-                        <div className="card flex-shrink-0 w-3/4 shadow-2xl bg-slate-100">
+                        <div className="card flex-shrink-0 w-full md:w-1/2 shadow-2xl bg-slate-100">
                             <div className="card-body">
-                                <div className="flex gap-4">
-                                    <div className="form-control w-1/2">
+                                <div className="md:flex gap-4">
+                                    <div className="form-control md:w-1/2">
                                         <label className="label">
                                             <span className="text-lg uppercase">Your Name</span>
                                         </label>
                                         <input type="text" className="input input-bordered" />
                                     </div>
-                                    <div className="form-control w-1/2">
+                                    <div className="form-control md:w-1/2">
                                         <label className="label">
                                             <span className="text-lg uppercase">Your Phone Number</span>
                                         </label>
@@ -62,7 +62,7 @@ const Contact = () => {
                                     <label className="label">
                                         <span className="text-lg uppercase">Your message</span>
                                     </label>
-                                    <textarea name="" id="" rows="10" className="w-ful"></textarea>
+                                    <textarea name="" id="" rows="5" className="w-ful"></textarea>
                                 </div>
                                 <div className="form-control mt-6">
                                     <button className="btn text-black bg-white shadow-2xl hover:bg-red-500 hover:text-white uppercase">Send Message</button>

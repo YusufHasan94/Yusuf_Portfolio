@@ -4,7 +4,7 @@ const Skills = () => {
     return (
         <div id="skills">
             <Heading subTitle={"6+ months experience"} title={"My Skills"}></Heading>
-            <div className="my-10 md:flex gap-10">
+            <div className="my-10 mx-10 flex flex-col md:flex-row gap-10">
                 <div className="md:w-1/2">
                     <h1 className="text-2xl font-semibold mb-4">
                         FrontEnd Technology 

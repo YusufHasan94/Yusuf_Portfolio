@@ -1,14 +1,14 @@
 
 const Navbar = () => {
     const navItems = <>
-        <a href="#home">Home</a>
+        <a href="/">Home</a>
         <a href="#services">Services</a>
         <a href="#skills">Skills</a>
         <a href="#projects">Projects</a>
         <a href="#contact">Contact Me</a>
     </>
     return (
-        <div className="navbar fixed top-0 z-20 bg-red-800 bg-opacity-10 font-semibold">
+        <div className="navbar fixed top-0 z-20 bg-red-800 bg-opacity-10 font-semibold max-w-screen-xl">
             <div className="navbar-start">
                 <div className="dropdown">
                     <label tabIndex={0} className="btn btn-ghost lg:hidden">
@@ -24,9 +24,6 @@ const Navbar = () => {
                 <ul className="menu menu-horizontal px-1 gap-10 text-xl">
                     {navItems}
                 </ul>
-            </div>
-            <div className="navbar-end">
-                
             </div>
         </div>
     );

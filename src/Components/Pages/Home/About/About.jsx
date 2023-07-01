@@ -3,11 +3,15 @@ import { FaRegFile, FaRegUser, FaRegEnvelope, FaMapMarkerAlt } from "react-icons
 
 const About = () => {
     const handleDownloadResume = ()=>{
-        console.log("btn clicked");
+        const url = "/data/YusufHasan_Resume.pdf";
+        const anchor = document.createElement("a");
+        anchor.href = url;
+        anchor.download = "YusufHasan_Resume.pdf";
+        anchor.click();
     }
     return (
-        <div className="my-10 flex gap-4" id="home">
-            <div className="md:w-1/2 flex flex-col justify-between">
+        <div className="my-32 mx-10 flex flex-col-reverse gap-10 md:flex-row" id="home">
+            <div className="w-full md:w-1/2 flex flex-col justify-between">
                 <div className="bg-slate-100 p-10 flex flex-col gap-2 rounded-xl shadow-2xl hover:translate-y-1 relative">
                     <p className="text-2xl"><FaRegUser></FaRegUser></p>
                     <h1 className="text-4xl font-bold">Hi, I'm <span className="text-red-500">Yusuf Hasan</span></h1>
@@ -23,7 +27,7 @@ const About = () => {
                     </div>
                 </div>
             </div>
-            <div className="md:w-1/2 bg-slate-100 p-4 rounded-xl shadow-2xl">
+            <div className="w-full md:w-1/2 bg-slate-100 p-4 rounded-xl shadow-2xl">
                 <div className="overflow-hidden">
                     <img src={img} alt="" className="hover:scale-110"/>
                 </div>
