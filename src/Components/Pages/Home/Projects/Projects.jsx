@@ -13,10 +13,10 @@ const Projects = () => {
     return (
         <div id='projects'>
             <Heading subTitle="Some of my finished Projects" title="My Works"></Heading>
-            <div className='my-10 mx-10'>
+            <div className='my-10 mx-5 md:mx-10'>
                 {
                     projects.map(project => (
-                        <div key={project.id} className=" my-4 w-full bg-base-100 shadow-2xl md:flex rounded-xl">
+                        <div key={project.id} className=" my-10 w-full bg-base-100 shadow-2xl md:flex rounded-xl">
                                 <figure className='md:w-2/5 flex'><img src={project.image} className='w-full' alt="Front end Development"/></figure>
                                 <div className="card-body md:w-3/5">
                                     <div className='flex justify-between items-center text-xl'>

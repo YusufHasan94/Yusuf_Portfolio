@@ -10,7 +10,7 @@ const About = () => {
         anchor.click();
     }
     return (
-        <div className="my-32 mx-10 flex flex-col-reverse gap-10 md:flex-row" id="home">
+        <div className=" mt-32 mx-5 md:mx-10 flex flex-col-reverse gap-10 md:flex-row" id="home">
             <div className="w-full md:w-1/2 flex flex-col justify-between">
                 <div className="bg-slate-100 p-10 flex flex-col gap-2 rounded-xl shadow-2xl hover:translate-y-1 relative">
                     <p className="text-2xl"><FaRegUser></FaRegUser></p>
@@ -20,7 +20,7 @@ const About = () => {
                     <p className="flex items-center gap-2 text-xl"><FaRegEnvelope className="text-red-500"></FaRegEnvelope> yhpolok@gmail.com</p>
                     <p className="flex items-center gap-2 text-xl"><FaMapMarkerAlt className="text-red-500"></FaMapMarkerAlt> Rajshahi, Bangladesh</p>
                 </div>
-                <div className="bg-slate-100 p-4 rounded-xl shadow-2xl">
+                <div className="bg-slate-100 p-4 my-4 rounded-xl shadow-2xl">
                     <p className="text-xl mb-2">Download my Resume</p>
                     <div className="text-center">
                         <button onClick={handleDownloadResume} className="w-1/2 bg-slate-200 px-4 py-2 rounded-md text-red-600 text-xl font-semibold">Resume</button>

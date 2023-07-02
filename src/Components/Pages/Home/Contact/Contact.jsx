@@ -7,7 +7,7 @@ const Contact = () => {
     return (
         <div id="contact">
             <Heading subTitle="stay connected" title="Contact Me"></Heading>
-            <div className="my-10 mx-5">
+            <div className="my-10 md:mx-5">
                 <div className="hero">
                     <div className="hero-content flex flex-col md:flex-row gap-4">
                         <div className="w-full md:w-1/2">
