@@ -1,8 +1,9 @@
+import { TypeAnimation } from "react-type-animation";
 import img from "../../../../assets/img.jpg"
 import { FaRegFile, FaRegUser, FaRegEnvelope, FaMapMarkerAlt } from "react-icons/fa";
 
 const About = () => {
-    const handleDownloadResume = ()=>{
+    const handleDownloadResume = () => {
         const url = "/data/YusufHasan_Resume.pdf";
         const anchor = document.createElement("a");
         anchor.href = url;
@@ -14,9 +15,23 @@ const About = () => {
             <div className="w-full md:w-1/2 flex flex-col justify-between">
                 <div className="bg-slate-100 p-10 flex flex-col gap-2 rounded-xl shadow-2xl hover:translate-y-1 relative">
                     <p className="text-2xl"><FaRegUser></FaRegUser></p>
-                    <h1 className="text-4xl font-bold">Hi, I'm <span className="text-red-500">Yusuf Hasan</span></h1>
+                    <h1 className="text-3xl md:text-4xl font-bold">Hi, I'm
+                        <span className="text-red-500 m-0 ml-2">
+                        <TypeAnimation
+                            sequence={[
+                                ' Yusuf Hasan',
+                                1000,
+                            ]}
+                            wrapper="span"
+                            speed={5}
+                            style={{ display: 'inline-block' }}
+                            repeat={0}
+                        />
+                        </span></h1>
                     <p className="text-xl">Working as a MERN Stack Developer from the part of my passion.</p>
-                    <p className="flex items-center gap-2 text-xl"><FaRegFile className="text-red-500"></FaRegFile> MERN stack Developer</p>
+                    <p className="flex items-center gap-2 text-xl">
+                        <FaRegFile className="text-red-500"></FaRegFile> MERN stack Developer
+                    </p>
                     <p className="flex items-center gap-2 text-xl"><FaRegEnvelope className="text-red-500"></FaRegEnvelope> yhpolok@gmail.com</p>
                     <p className="flex items-center gap-2 text-xl"><FaMapMarkerAlt className="text-red-500"></FaMapMarkerAlt> Rajshahi, Bangladesh</p>
                 </div>
@@ -29,9 +44,9 @@ const About = () => {
             </div>
             <div className="w-full md:w-1/2 bg-slate-100 p-4 rounded-xl shadow-2xl">
                 <div className="overflow-hidden">
-                    <img src={img} alt="" className="hover:scale-110"/>
+                    <img src={img} alt="" className="hover:scale-110" />
                 </div>
-            </div>            
+            </div>
         </div>
     );
 };

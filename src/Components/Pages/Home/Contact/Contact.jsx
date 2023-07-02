@@ -2,8 +2,29 @@ import Heading from "../../../Shared/Heading/Heading";
 import profile from "../../../../assets/profile.jpg"
 import { Link } from "react-router-dom";
 import {FaLinkedin, FaGithub, FaFacebookF } from "react-icons/fa";
+import Swal from "sweetalert2";
 
 const Contact = () => {
+    const handleSubmitForm = event =>{
+        event.preventDefault();
+        console.log("form submitted");
+        const form = event.target;
+        const name = form.name.value;
+        const number = form.number.value;
+        const email = form.email.value;
+        const subject = form.subject.value;
+        const message = form.message.value;
+        const userMessage = {name, number, email, subject, message};
+        console.log(userMessage);
+        if(userMessage){
+            Swal.fire({
+                icon: 'success',
+                title: 'Congratulations',
+                text: 'Successfully Send Message'
+            })
+            form.reset();
+        }
+    }
     return (
         <div id="contact">
             <Heading subTitle="stay connected" title="Contact Me"></Heading>
@@ -32,41 +53,45 @@ const Contact = () => {
                         </div>
                         <div className="card flex-shrink-0 w-full md:w-1/2 shadow-2xl bg-slate-100">
                             <div className="card-body">
-                                <div className="md:flex gap-4">
-                                    <div className="form-control md:w-1/2">
-                                        <label className="label">
-                                            <span className="text-lg uppercase">Your Name</span>
-                                        </label>
-                                        <input type="text" className="input input-bordered" />
+                                <form onSubmit={handleSubmitForm}>
+
+                                    <div className="md:flex gap-4">
+                                        <div className="form-control md:w-1/2">
+                                            <label className="label">
+                                                <span className="text-lg uppercase">Your Name</span>
+                                            </label>
+                                            <input type="text" name="name" className="input input-bordered" required/>
+                                        </div>
+                                        <div className="form-control md:w-1/2">
+                                            <label className="label">
+                                                <span className="text-lg uppercase">Your Phone Number</span>
+                                            </label>
+                                            <input type="number" name="number" className="input input-bordered" required/>
+                                        </div>
                                     </div>
-                                    <div className="form-control md:w-1/2">
+                                    <div className="form-control">
                                         <label className="label">
-                                            <span className="text-lg uppercase">Your Phone Number</span>
+                                            <span className="text-lg uppercase">Email</span>
                                         </label>
-                                        <input type="number" className="input input-bordered" />
+                                        <input type="email" name="email" className="input input-bordered" required/>
+                                    </div> 
+                                    <div className="form-control">
+                                        <label className="label">
+                                            <span className="text-lg uppercase">Subject</span>
+                                        </label>
+                                        <input type="text" name="subject" className="input input-bordered" required/>
                                     </div>
-                                </div>
-                                <div className="form-control">
-                                    <label className="label">
-                                        <span className="text-lg uppercase">Email</span>
-                                    </label>
-                                    <input type="email" className="input input-bordered" />
-                                </div> 
-                                <div className="form-control">
-                                    <label className="label">
-                                        <span className="text-lg uppercase">Subject</span>
-                                    </label>
-                                    <input type="email" className="input input-bordered" />
-                                </div>
-                                <div className="form-control">
-                                    <label className="label">
-                                        <span className="text-lg uppercase">Your message</span>
-                                    </label>
-                                    <textarea name="" id="" rows="5" className="w-ful"></textarea>
-                                </div>
-                                <div className="form-control mt-6">
-                                    <button className="btn text-black bg-white shadow-2xl hover:bg-red-500 hover:text-white uppercase">Send Message</button>
-                                </div>
+                                    <div className="form-control">
+                                        <label className="label">
+                                            <span className="text-lg uppercase">Your message</span>
+                                        </label>
+                                        <textarea name="message" id="" rows="5" className="w-ful rounded-lg p-4" required></textarea>
+                                    </div>
+                                    <div className="form-control mt-6">
+                                        <input type="submit" name="submit" value= "Send Message" 
+                                        className="btn text-black bg-white shadow-2xl hover:bg-red-500 hover:text-white uppercase"/>
+                                    </div>
+                                </form>
                             </div>
                         </div>
                     </div>
