@@ -6,6 +6,8 @@
         "details":"Dynamic full stack web application for a sports academy based on summer camp. Secure authentication system and user access. Conditional admin panel to handle different role. Secure database management system. Secure and easy payment process.",
         "technology": ["React", "React Router", "Tailwind CSS", "Daisy UI", "Firebase", "Express JS", "MongoDB", "Stripe", "REST API"],
         "liveLink": "https://gear-up-sports-academy.web.app/",
+        "github_client":"https://github.com/YusufHasan94/gear-up-sports-academy-client",
+        "github_server":"https://github.com/YusufHasan94/gear-up-sports-academy-server",
         "type":"full stack"
     },{
         "id":"p2",
@@ -14,6 +16,8 @@
         "details":"Dynamic full stack web application on toys store. Use to add toys with proper information by registered user. Secure authentication system and user access. Secure database management system and nice responsive and also user friendly layout.",
         "technology": ["React","React Router","Tailwind CSS","Daisy UI","Firebase","Express JS","MongoDB"],
         "liveLink": "https://disney-toy-bazar.web.app/",
+        "github_client":"https://github.com/YusufHasan94/disney-toy-bazar-client",
+        "github_server":"https://github.com/YusufHasan94/disney-toy-bazar-server",
         "type":"full stack"
     },{
         "id":"p3",
@@ -22,6 +26,8 @@
         "details":"Complete responsive single page web application. Available all chefs' information with their recipes. Secure user access to visit private route.",
         "technology": ["React","React Router","React Bootstrap","Firebase","Express JS"],
         "liveLink": "https://secret-chef-recipe.web.app/",
+        "github_client":"https://github.com/YusufHasan94/secret-chef-recipe-client",
+        "github_server":"https://github.com/YusufHasan94/secret-chef-recipe-server",
         "type": "front end"
     }
 ]

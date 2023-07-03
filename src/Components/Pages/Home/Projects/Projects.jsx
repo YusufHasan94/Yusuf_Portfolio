@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 import Heading from '../../../Shared/Heading/Heading';
-import { FaGlobe, FaRegHeart } from "react-icons/fa";
+import { FaGithub, FaGlobe, FaRegHeart } from "react-icons/fa";
 import { Link } from 'react-router-dom';
 
 const Projects = () => {
@@ -23,12 +23,25 @@ const Projects = () => {
                                         <span className='bg-red-600 px-2 py-1 rounded-full text-sm text-white font-semibold '>{project.type}</span>
                                         <FaRegHeart></FaRegHeart>
                                     </div>
-                                    <h2 className="card-title text-2xl justify-between">
-                                        {project.name} 
-                                        <Link to={project.liveLink} target='_blank'>
-                                            <FaGlobe></FaGlobe>
-                                        </Link>
-                                    </h2>
+                                    <div className="card-title flex-col md:flex-row justify-between">
+                                        <h2 className='text-2xl'>
+                                            {project.name} 
+                                        </h2>
+                                        <div className='flex items-center gap-4'>
+                                            <div className='flex flex-col gap-1 items-center'>
+                                                <FaGithub></FaGithub>
+                                                <Link to={project.github_client} target='_blank' className='text-lg hover:text-red-500'>Client</Link>
+                                            </div>
+                                            <div className='flex flex-col gap-1 items-center'>
+                                                <FaGithub></FaGithub>
+                                                <Link to={project.github_server} target='_blank' className='text-lg hover:text-red-500'>Server</Link>
+                                            </div>
+                                            <div className='flex flex-col gap-1 items-center'>
+                                                <FaGlobe></FaGlobe>
+                                                <Link to={project.liveLink} target='_blank' className='text-lg hover:text-red-500'>Live Link</Link>
+                                            </div>
+                                        </div>
+                                    </div>
                                     <p>
                                         {project.details}
                                     </p>
