@@ -2,7 +2,8 @@
     {
         "id":"p1",
         "name":"Gear Up Sports Academy",
-        "image":"https://i.ibb.co/WK20PDV/project1.png",
+        "image":["https://i.ibb.co/WK20PDV/project1.png", "https://i.ibb.co/7t3LSdh/po1.png","https://i.ibb.co/QXrX2JC/po2.png",
+        "https://i.ibb.co/RbwSqJt/po3.png"],
         "details":"Dynamic full stack web application for a sports academy based on summer camp. Secure authentication system and user access. Conditional admin panel to handle different role. Secure database management system. Secure and easy payment process.",
         "technology": ["React", "React Router", "Tailwind CSS", "Daisy UI", "Firebase", "Express JS", "MongoDB", "Stripe", "REST API"],
         "liveLink": "https://gear-up-sports-academy.web.app/",
@@ -12,7 +13,7 @@
     },{
         "id":"p2",
         "name":"Disney Toy Bazar",
-        "image":"https://i.ibb.co/gJzVf4x/project2.png",
+        "image":["https://i.ibb.co/gJzVf4x/project2.png","https://i.ibb.co/nChM63M/cap2.png", "https://i.ibb.co/zP4S3LV/cap3.png", "https://i.ibb.co/LvBrsDn/cap4.png"],
         "details":"Dynamic full stack web application on toys store. Use to add toys with proper information by registered user. Secure authentication system and user access. Secure database management system and nice responsive and also user friendly layout.",
         "technology": ["React","React Router","Tailwind CSS","Daisy UI","Firebase","Express JS","MongoDB"],
         "liveLink": "https://disney-toy-bazar.web.app/",
@@ -22,7 +23,7 @@
     },{
         "id":"p3",
         "name":"Secret Chef Recipe",
-        "image":"https://i.ibb.co/cCZSrZx/project3.png",
+        "image":["https://i.ibb.co/cCZSrZx/project3.png", "https://i.ibb.co/4N4L5nS/pro3cap1.png", "https://i.ibb.co/JsBkQkD/pro3cap2.png","https://i.ibb.co/9rNKvsL/pro3cap3.png"],
         "details":"Complete responsive single page web application. Available all chefs' information with their recipes. Secure user access to visit private route.",
         "technology": ["React","React Router","React Bootstrap","Firebase","Express JS"],
         "liveLink": "https://secret-chef-recipe.web.app/",
