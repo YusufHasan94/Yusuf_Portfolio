@@ -1,8 +1,4 @@
 import Heading from "../../../Shared/Heading/Heading";
-import vscode from "../../../../assets/vscode.png";
-import git from "../../../../assets/git.png";
-import github from "../../../../assets/github.png";
-import npm from "../../../../assets/npm.png";
 
 const Skills = () => {
     return (
