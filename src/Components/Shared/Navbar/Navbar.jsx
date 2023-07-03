@@ -2,11 +2,11 @@ import { Link } from "react-router-dom";
 
 const Navbar = () => {
     const navItems = <>
-        <a href="/">Home</a>
-        <a href="#services">Services</a>
-        <a href="#skills">Skills</a>
-        <Link to="/projects">Projects</Link>
-        <a href="#contact">Contact Me</a>
+        <Link to="/" className="hover:text-red-500">Home</Link>
+        <Link to="/services" className="hover:text-red-500" >Services</Link>
+        <Link to="/skills" className="hover:text-red-500" >Skills</Link>
+        <Link to="/projects" className="hover:text-red-500" >Projects</Link>
+        <Link to="/contact" className="hover:text-red-500" >Contact Me</Link>
     </>
     return (
         <div className="navbar fixed top-0 z-20 bg-red-800 bg-opacity-10 font-semibold max-w-screen-xl">

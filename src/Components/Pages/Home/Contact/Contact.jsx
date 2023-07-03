@@ -26,7 +26,7 @@ const Contact = () => {
         }
     }
     return (
-        <div id="contact">
+        <div>
             <Heading subTitle="stay connected" title="Contact Me"></Heading>
             <div className="my-10 md:mx-5">
                 <div className="hero">
@@ -34,7 +34,7 @@ const Contact = () => {
                         <div className="w-full md:w-1/2">
                             <div className="card bg-slate-100 shadow-xl">
                                 <figure className="px-10 pt-10">
-                                    <img src={profile} alt="Shoes" className="rounded-xl" />
+                                    <img src={profile} alt="profile images" className="rounded-xl" />
                                 </figure>
                                 <div className="card-body items-start">
                                     <h2 className="text-4xl font-semibold">Yusuf Hasan</h2>

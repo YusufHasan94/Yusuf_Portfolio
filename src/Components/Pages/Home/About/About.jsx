@@ -1,6 +1,6 @@
 import { TypeAnimation } from "react-type-animation";
 import img from "../../../../assets/img.jpg"
-import { FaRegFile, FaRegUser, FaRegEnvelope, FaMapMarkerAlt } from "react-icons/fa";
+import { FaRegFile, FaRegUser, FaRegEnvelope, FaMapMarkerAlt, FaDownload } from "react-icons/fa";
 
 const About = () => {
     const handleDownloadResume = () => {
@@ -37,8 +37,8 @@ const About = () => {
                 </div>
                 <div className="bg-slate-100 p-4 my-4 rounded-xl shadow-2xl">
                     <p className="text-xl mb-2">Download my Resume</p>
-                    <div className="text-center">
-                        <button onClick={handleDownloadResume} className="w-1/2 bg-slate-200 px-4 py-2 rounded-md text-red-600 text-xl font-semibold">Resume</button>
+                    <div className="text-center flex justify-center">
+                        <button onClick={handleDownloadResume} className="w-1/2 bg-slate-200 px-4 py-2 rounded-md text-red-600 text-xl font-semibold flex justify-center items-center gap-4">Resume <FaDownload></FaDownload></button>
                     </div>
                 </div>
             </div>

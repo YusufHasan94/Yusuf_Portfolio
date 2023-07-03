@@ -25,7 +25,7 @@ const Projects = () => {
                                 <Swiper navigation={true} modules={[Navigation]} className="mySwiper">
                                     {project?.image?.map(img => (
                                         <SwiperSlide key={project.id}>
-                                            <img src={img} className='w-full' alt="Front end Development" />
+                                            <img src={img} className='w-full' alt="projects picture" />
                                         </SwiperSlide>
                                     ))}
                                 </Swiper>

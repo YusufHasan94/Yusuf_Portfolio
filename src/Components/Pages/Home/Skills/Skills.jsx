@@ -2,7 +2,7 @@ import Heading from "../../../Shared/Heading/Heading";
 
 const Skills = () => {
     return (
-        <div id="skills">
+        <div>
             <Heading subTitle={"6+ months experience"} title={"My Skills"}></Heading>
             <div className="my-10 mx-10">
                 <div className="flex flex-col md:flex-row gap-10">
